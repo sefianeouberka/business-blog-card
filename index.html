@@ -12,33 +12,41 @@
     />
     <link rel="stylesheet" href="style.css">
     <title>Business Blog Card</title>
-    <style>
-    </style>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <div class="image-layer">
-          <img src="resources/hero-image-1.jpg" alt="">
-          <svg class="wave-divider" viewBox="0 0 500 80" preserveAspectRatio="none">
-            <path d="M0,45 C150,85 320,5 500,45 L500,80 L0,80 Z" fill="#ffffff"></path>
+    <main class="page_stage">
+      <article class="card_container" aria-labelledby="card_title">
+        <div class="card_media">
+          <img class="card_image" src="resources/hero-image-1.jpg" alt="two persone in a caffee">
+          <svg
+            class="card__wave"
+            viewBox="0 0 500 80"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            focusable="false"
+            >
+            <path
+              d="M0,68 C120,76 235,14 345,14 C415,14 455,48 500,68 L500,80 L0,80 Z"
+              fill="currentColor"
+            />
           </svg>
         </div>
-        <div class="body-layer">
-          <h2>Perfect solution for small business</h2>
-          <p>Small businesses need to generate leads to grow. You can use tools like Ringy.</p>
+        <div class="card_body">
+          <h2 id="card_title" class="card_title"> Perfect solution for small business </h2>
+          <p class="card_description"> 
+            Small businesses need to generate leads to grow. You can use tools like Ringy.
+          </p>
         </div>
-        <hr class="seprator-line">
-        <div class="author-layer">
-          <div class="avatar">
-            <img src="resources/avatar-image-business-card-1.png" alt="image author">
+        <footer class="card_aothor">
+          <div class="card_avatar">
+            <img src="resources/avatar-image-business-card-1.png" alt="image of persone">
           </div>
-          <div class="author-info">
-            <h4>Amy Burgess</h4>
-            <p>Customer Manager, Solution Oy</p>
+          <div class="card_info_author">
+            <p class="name_author"> Amy Burgess </p>
+            <p class="job_position">Customer Manager, Solution Oy</p>
           </div>
-        </div>
-      </div>
-    </div>
+        </footer>
+      </article>
+    </main>
   </body>
 </html>
